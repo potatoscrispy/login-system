@@ -24,9 +24,12 @@
         <div class="container d-flex justify-content-center">
             <div class="w-75 main bg-color1 p-5 text-center d-flex flex-column">
                 <h1 class="mb-3 color2">Smart Login System</h1>
-                <input class="input" type="email" id="emailLogin" placeholder="Enter your email">
-                <input class="input" type="password" id="passwordLogin" placeholder="Enter your password">
-                <button id="login" class="btn btn-outline-info">Login</button>
+                <input onfocus="removeAlertLogin()" class="input" type="email" id="emailLogin"
+                    placeholder="Enter your email">
+                <input onfocus="removeAlertLogin()" class="input" type="password" id="passwordLogin"
+                    placeholder="Enter your password">
+                <div id="alert-login" class="text-danger mb-4 d-none"></div>
+                <button id="login" class="btn btn-outline-info mb-1" onclick="signIn()">Login</button>
                 <span class="color3">Don't have an account? <a href="signup.html"
                         class="text-decoration-none color3">Sign
                         Up</a></span>

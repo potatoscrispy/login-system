@@ -22,13 +22,16 @@
         <div class="container-md d-flex justify-content-center align-content-center">
             <div class="main bg-color1 p-5 text-center d-flex flex-column">
                 <h1 class="mb-3 color2">Smart Login System</h1>
-                <input class="input" type="email" id="email" placeholder="Enter your email">
-                <input class="input" type="password" id="password" placeholder="Enter your password">
-                <button id="signup" class="btn btn-outline-info">Login</button>
+                <input onfocus="removeAlert()" class="input" type="name" id="nameSignup" placeholder="Enter your name">
+                <input onfocus="removeAlert()" class="input" type="email" id="emailSignup"
+                    placeholder="Enter your email">
+                <input onfocus="removeAlert()" class="input" type="password" id="passwordSignup"
+                    placeholder="Enter your password">
+                <div id="alert" class="text-danger d-none mb-4"></div>
+                <button id="signup" class="btn btn-outline-info mb-1" onclick="signUp()">Sign Up</button>
                 <span class="color3">You have an account? <a href="index.html" class="text-decoration-none color3">Sign
                         In</a></span>
             </div>
-
         </div>
     </div>
 
